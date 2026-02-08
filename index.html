@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Event Management System | Polytechnic University of the Philippines</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.pup.edu.ph/favicon.ico">
+</head>
+<body>
+    <!-- PUP Header Banner -->
+    <div class="pup-banner">
+        <div class="banner-content">
+            <img src="image/download.png" alt="PUP Logo" class="pup-logo">
+            <div class="banner-text">
+                <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                <p>Office of Student Services and Development</p>
+            </div>
+        </div>
+        <div class="maroon-strip"></div>
+        <div class="gold-strip"></div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="pup-nav" id="navMenu">
+        <div class="nav-container">
+            <a href="#dashboard" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#events" class="nav-link">
+                <i class="fas fa-calendar-alt"></i>
+                <span>University Events</span>
+            </a>
+            <a href="#academic" class="nav-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academic Calendar</span>
+            </a>
+            <a href="#announcements" class="nav-link">
+                <i class="fas fa-bullhorn"></i>
+                <span>OSS Announcements</span>
+            </a>
+            <a href="#organizations" class="nav-link">
+                <i class="fas fa-users"></i>
+                <span>Student Organizations</span>
+            </a>
+            <a href="#library" class="nav-link">
+                <i class="fas fa-book-open"></i>
+                <span>Library Events</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuBtn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- PUP Main Content -->
+    <main class="pup-container">
+        <!-- Welcome Banner -->
+        <section class="welcome-banner">
+            <div class="welcome-content">
+                <h2><i class="fas fa-university"></i> PUP Event Management System</h2>
+                <p class="motto">"Tanglaw ng Bayan" - Your Guide to Campus Activities</p>
+                <div class="academic-year">
+                    <span class="academic-badge">Academic Year 2023-2024</span>
+                    <span class="semester">Second Semester</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Upcoming Events</h3>
+                    <p class="stat-number">28</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Participants</h3>
+                    <p class="stat-number">4,560+</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Organizations</h3>
+                    <p class="stat-number">42</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>Active Projects</h3>
+                    <p class="stat-number">18</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Events -->
+        <section class="pup-section" id="events">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Featured University Events</h2>
+                <span class="section-badge">Official</span>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card featured">
+                    <div class="event-header">
+                        <span class="event-type academic">Academic</span>
+                        <span class="event-date">March 15-17, 2024</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">PUP 120th Foundation Week Celebration</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> PUP Main Campus, Sta. Mesa</p>
+                            <p><i class="fas fa-clock"></i> 8:00 AM - 9:00 PM Daily</p>
+                            <p><i class="fas fa-user-tie"></i> Office of the President</p>
+                        </div>
+                        <p class="event-description">Celebrating 120 years of academic excellence and service to the nation. Join us for cultural shows, academic forums, alumni homecoming, and special awards ceremonies.</p>
+                        <div class="event-footer">
+                            <span class="status active">Registration Open</span>
+                            <button class="pup-btn primary">
+                                <i class="fas fa-clipboard-list"></i> Register Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-type cultural">Cultural</span>
+                        <span class="event-date">March 20, 2024</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">PUP Sining Lahi Cultural Festival</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> PUP Open Field</p>
+                            <p><i class="fas fa-clock"></i> 3:00 PM - 10:00 PM</p>
+                        </div>
+                        <p class="event-description">Showcasing Filipino cultural heritage through performances, art exhibits, and traditional craft demonstrations by various student organizations.</p>
+                        <div class="event-footer">
+                            <span class="status upcoming">Starting Soon</span>
+                            <button class="pup-btn outline">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-type sports">Sports</span>
+                        <span class="event-date">March 25-30, 2024</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">University Intramurals 2024</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-map-marker-alt"></i> PUP Gymnasium & Sports Complex</p>
+                            <p><i class="fas fa-clock"></i> 7:00 AM - 6:00 PM</p>
+                        </div>
+                        <p class="event-description">Annual university-wide sports competition featuring basketball, volleyball, badminton, chess, and other athletic events.</p>
+                        <div class="event-footer">
+                            <span class="status active">Team Registration</span>
+                            <button class="pup-btn outline">
+                                <i class="fas fa-running"></i> Join Competition
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Calendar -->
+        <section class="pup-section" id="academic">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-check"></i> Academic Calendar Highlights</h2>
+            </div>
+            
+            <div class="calendar-grid">
+                <div class="calendar-event important">
+                    <div class="calendar-date">
+                        <span class="date-day">20</span>
+                        <span class="date-month">MAR</span>
+                    </div>
+                    <div class="calendar-details">
+                        <h4>Midterm Examination Period</h4>
+                        <p>All Colleges and Departments</p>
+                        <span class="calendar-tag">Examination</span>
+                    </div>
+                </div>
+                
+                <div class="calendar-event">
+                    <div class="calendar-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">MAR</span>
+                    </div>
+                    <div class="calendar-details">
+                        <h4>Deadline of Term Paper Submission</h4>
+                        <p>Graduate School</p>
+                        <span class="calendar-tag">Submission</span>
+                    </div>
+                </div>
+                
+                <div class="calendar-event">
+                    <div class="calendar-date">
+                        <span class="date-day">01</span>
+                        <span class="date-month">APR</span>
+                    </div>
+                    <div class="calendar-details">
+                        <h4>Faculty Development Seminar</h4>
+                        <p>Center for Teaching Excellence</p>
+                        <span class="calendar-tag">Seminar</span>
+                    </div>
+                </div>
+                
+                <div class="calendar-event holiday">
+                    <div class="calendar-date">
+                        <span class="date-day">09</span>
+                        <span class="date-month">APR</span>
+                    </div>
+                    <div class="calendar-details">
+                        <h4>Araw ng Kagitingan</h4>
+                        <p>University Holiday - No Classes</p>
+                        <span class="calendar-tag">Holiday</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements -->
+        <section class="pup-section" id="announcements">
+            <div class="section-header">
+                <h2><i class="fas fa-newspaper"></i> Office of Student Services Announcements</h2>
+                <span class="section-badge urgent">Important</span>
+            </div>
+            
+            <div class="announcements-list">
+                <div class="announcement-item new">
+                    <div class="announcement-header">
+                        <h4><i class="fas fa-exclamation-circle"></i> Scholarship Application Deadline Extended</h4>
+                        <span class="announcement-time">Today | 9:00 AM</span>
+                    </div>
+                    <p>The deadline for CHED Tulong Dunong Scholarship applications has been extended until March 31, 2024.</p>
+                    <div class="announcement-footer">
+                        <span class="department">Office of Scholarships</span>
+                        <a href="#" class="read-more">Read Full Memo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="announcement-item">
+                    <div class="announcement-header">
+                        <h4><i class="fas fa-wifi"></i> Campus Wi-Fi Maintenance Schedule</h4>
+                        <span class="announcement-time">Yesterday | 2:30 PM</span>
+                    </div>
+                    <p>Internet services will be temporarily unavailable on March 18, 2024 (10:00 PM - 2:00 AM) for system upgrades.</p>
+                    <div class="announcement-footer">
+                        <span class="department">MIS Department</span>
+                        <a href="#" class="read-more">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="announcement-item">
+                    <div class="announcement-header">
+                        <h4><i class="fas fa-user-graduate"></i> Graduation Rehearsal Schedule</h4>
+                        <span class="announcement-time">March 12, 2024 | 8:00 AM</span>
+                    </div>
+                    <p>All graduating students are required to attend the graduation rehearsal on April 15, 2024 at the PUP Gymnasium.</p>
+                    <div class="announcement-footer">
+                        <span class="department">Registrar's Office</span>
+                        <a href="#" class="read-more">Download Schedule <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Organizations -->
+        <section class="pup-section" id="organizations">
+            <div class="section-header">
+                <h2><i class="fas fa-users"></i> Featured Student Organizations</h2>
+            </div>
+            
+            <div class="orgs-grid">
+                <div class="org-card">
+                    <div class="org-logo">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="org-info">
+                        <h4>PUP Science Guild</h4>
+                        <p>Science & Technology</p>
+                        <span class="org-members">245 members</span>
+                    </div>
+                    <button class="pup-btn small">View Events</button>
+                </div>
+                
+                <div class="org-card">
+                    <div class="org-logo">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="org-info">
+                        <h4>PUP Artista</h4>
+                        <p>Arts & Culture</p>
+                        <span class="org-members">189 members</span>
+                    </div>
+                    <button class="pup-btn small">View Events</button>
+                </div>
+                
+                <div class="org-card">
+                    <div class="org-logo">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="org-info">
+                        <h4>PUP Environmental Society</h4>
+                        <p>Environment & Advocacy</p>
+                        <span class="org-members">312 members</span>
+                    </div>
+                    <button class="pup-btn small">View Events</button>
+                </div>
+                
+                <div class="org-card">
+                    <div class="org-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="org-info">
+                        <h4>PUP Computer Society</h4>
+                        <p>Technology & Innovation</p>
+                        <span class="org-members">428 members</span>
+                    </div>
+                    <button class="pup-btn small">View Events</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PUP Footer -->
+    <footer class="pup-footer">
+        <div class="footer-main">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://www.pup.edu.ph/images/logo.png" alt="PUP Logo" width="60">
+                    <div>
+                        <h3>Polytechnic University of the Philippines</h3>
+                        <p class="motto">"Tanglaw ng Bayan"</p>
+                    </div>
+                </div>
+                <p class="footer-description">The premier state university in the Philippines committed to providing quality education and holistic development.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-external-link-alt"></i> PUP Official Website</a></li>
+                    <li><a href="#"><i class="fas fa-user-graduate"></i> PUP Web Portal</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> PUP Library System</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Academic Calendar</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Anonas Street, Sta. Mesa, Manila</p>
+                <p><i class="fas fa-phone"></i> (02) 5335-1787</p>
+                <p><i class="fas fa-envelope"></i> ossd@pup.edu.ph</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Polytechnic University of the Philippines. Office of Student Services and Development. All rights reserved.</p>
+            <p>This is a demonstration system for PUP Event Management.</p>
+        </div>
+    </footer>
+
+    <!-- Notification System -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-university"></i>
+            <div>
+                <strong>PUP Notification</strong>
+                <span id="notificationText">Welcome to PUP Event Management System</span>
+            </div>
+        </div>
+        <button class="notification-close">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
